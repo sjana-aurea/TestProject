@@ -21,11 +21,12 @@ public class FirstJunitTest {
 	@Test
 	public void test() {
 		functionLibrary.navigate("http://www.seleniumhq.org/");
+		System.out.println(functionLibrary.getTitle());
 	}
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		System.out.println("@AfterClass");
+		functionLibrary.closeBrowser();
 	}
 
 }
