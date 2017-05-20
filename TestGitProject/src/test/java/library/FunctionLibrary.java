@@ -27,5 +27,9 @@ public class FunctionLibrary {
 	public void closeBrowser(){
 		driver.quit();
 	}
+	
+	public String getTitle(){
+		return driver.getTitle();
+	}
 
 }
