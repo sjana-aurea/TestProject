@@ -25,7 +25,7 @@ public class FirstJunitTest {
 
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		System.out.println("@AfterClass");
+		functionLibrary.closeBrowser();
 	}
 
 }

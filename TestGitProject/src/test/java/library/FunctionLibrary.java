@@ -23,5 +23,9 @@ public class FunctionLibrary {
 	public void navigate(String url){
 		driver.navigate().to(url);
 	}
+	
+	public void closeBrowser(){
+		driver.quit();
+	}
 
 }
