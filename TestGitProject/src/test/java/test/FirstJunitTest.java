@@ -21,6 +21,7 @@ public class FirstJunitTest {
 	@Test
 	public void test() {
 		functionLibrary.navigate("http://www.seleniumhq.org/");
+		System.out.println(functionLibrary.getTitle());
 	}
 
 	@AfterClass
